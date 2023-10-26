@@ -22,7 +22,7 @@ const Card = ({movie}) => {
             isLoading ?
             <div className="card">
                 <skeletonTheme  color="#202020" highlightColor="#444">
-                  <Skeleton height={300} duration={2} />
+                  <Skeleton height={300} duration={3} />
                 </skeletonTheme>
             </div>
             :

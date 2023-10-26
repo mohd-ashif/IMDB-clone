@@ -30,6 +30,7 @@ const MovieList = () => {
           <Card key={movie.id} movie={movie} />
         ))}
       </div>
+      
     </div>
   );
 }

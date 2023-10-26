@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import MovieList from '../../moviList/MovieList';
 
+
 const Home = () => {
   const [popularMovies, setPopularMovies] = useState([]);
 
@@ -21,7 +22,7 @@ const Home = () => {
           <Carousel
             showThumbs={false}
             autoPlay={true}
-            transitionTime={3}
+            transitionTime={400}
             infiniteLoop={true}
             showStatus={false}  
           >
@@ -61,6 +62,7 @@ const Home = () => {
         )}
 
         <MovieList />
+       
       </div>
     </>
   );
