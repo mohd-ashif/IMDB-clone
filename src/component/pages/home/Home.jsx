@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import "./Home.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
+import MovieList from '../../moviList/MovieList';
 
 const Home = () => {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -19,7 +21,7 @@ const Home = () => {
           <Carousel
             showThumbs={false}
             autoPlay={true}
-            transitionTime={3000}
+            transitionTime={3}
             infiniteLoop={true}
             showStatus={false}  
           >
@@ -29,17 +31,19 @@ const Home = () => {
               <Link style={{textDecoration:"none",color:"white"}} to={`/movie/${movie.id}`}>
               <div  key={movie.id}  className='posterImage'>
                 
-               <img src={`https://image.tmdb.org/t/p/original/${movie && movie.backdrop_path}`} alt="imag" />
+               <img src={`https://image.tmdb.org/t/p/original/${movie && movie.backdrop_path}`} alt='' />
               </div>
                <div className="posterImage__overlay">
+
                 <div className="posterImage__title"> {movie ? movie.original_title:""}</div>
+
                 <div className="posterImage__language">
                   {movie ?  movie.original_language : ""}
+
                 <div className="posterImage__runtime">
                   {movie ? movie.release_date: ""}
-               
+                  
                   <span className="posterImage__rating">
-                    
                     <i className='fas fa-star' />{" "}
                   </span>
                   </div>
@@ -55,6 +59,8 @@ const Home = () => {
         ) : (
           <p>Loading...</p>
         )}
+
+        <MovieList />
       </div>
     </>
   );
