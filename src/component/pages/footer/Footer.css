@@ -1,0 +1,25 @@
+.footer__head{
+    padding: 10px;
+    padding-top: 30px;
+    margin-left: 90px;
+}
+.second__footer{
+    padding-top: 30px;
+    padding-left: 30px;
+    margin-left: 150px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap :30px;
+    margin-left: 260px;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    
+}
+.date{
+    
+    padding: 10px;
+    padding-top: 30px;
+    margin-left: 290px
+}
