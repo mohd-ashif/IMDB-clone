@@ -1,18 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+  ;
+  
+}
+.foot_all{
+    width: 100%;
+}
 .footer__head{
     padding: 10px;
     padding-top: 30px;
-    margin-left: 90px;
+    margin-left: 390px;
 }
 .second__footer{
     padding-top: 30px;
     padding-left: 30px;
-    margin-left: 150px;
+    margin-left: 450px;
 }
 .icons{
     display: flex;
     align-items: center;
     gap :30px;
-    margin-left: 260px;
+    margin-left: 560px;
     padding-bottom: 30px;
     font-size: 2rem;
     
@@ -21,5 +30,5 @@
     
     padding: 10px;
     padding-top: 30px;
-    margin-left: 290px
+    margin-left: 590px
 }

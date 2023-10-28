@@ -4,6 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
+      <div className="foot_all">
       <div className="icons">
       
   <i class="fab fa-tiktok"></i>
@@ -52,8 +53,9 @@ const Footer = () => {
       © 1990 - 2023 by IMDB.com,Inc.
       </div>
     
-
+      </div>
     </footer>
+    
   );
 }
 

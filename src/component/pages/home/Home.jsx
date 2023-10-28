@@ -63,7 +63,8 @@ const Home = () => {
         )}
 
         <MovieList />
-      
+        <Footer />
+
        
       </div>
     </>
